@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> شيماء محمد أحمد</title>
+    <link rel="icon" type="image/x-icon" href="./images.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        customBlue: '#0A192F',
+                        customGold: '#C5A059',
+                        customWhite: '#FFFFFF',
+                        customLightGray: '#F5F5F5',
+                        customDarkBlue: '#002147',
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body class="font-cairo bg-white text-gray-800">
+
+    <!-- نافبار -->
+    <nav class="bg-customBlue p-4 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex items-center justify-between">
+        <a href="#" class="text-customWhite text-xl font-bold flex items-center gap-2">
+            <i class="fas fa-balance-scale text-customGold text-3xl"></i>
+            شيماء محمد أحمد
+        </a>
+
+        <button id="menuBtn" class="md:hidden text-customWhite text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div id="navMenu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-customBlue md:bg-transparent p-6 md:p-0 space-y-4 md:space-y-0 md:space-x-reverse md:space-x-6 text-center">
+            <a href="#about" class="text-customWhite hover:text-customGold block">من أنا</a>
+            <a href="#services" class="text-customWhite hover:text-customGold block">الخدمات</a>
+            <a href="#achieve" class="text-customWhite hover:text-customGold block">الإنجازات</a>
+            <a href="#contact" class="text-customWhite hover:text-customGold block">اتصلي بنا</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- قسم "من أنا" المطابق للصورة -->
+    <section id='about' class="bg-[#0A192F] text-white py-16 px-8 ">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="border-2 border-[#C5A059] p-3 rounded-lg relative drop-shadow-[0_0_15px_#C5A059]">
+                    <img src="./photo.png" alt="الأستاذة شيماء محمد أحمد"
+                        class="rounded-lg w-[400px] h-auto shadow-2xl">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 space-y-5">
+                <div
+                    class="bg-[#C5A059] border border-[#C5A059] text-[#FFFFFF] px-4 py-1 rounded-full inline-block text-sm font-cairo tracking-wide">
+                    محامية وباحثة ماجستير
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight">
+                    الأستاذة<br><span class=" mt-3 text-[#C5A059]">شيماء محمد أحمد</span>
+                </h1>
+                <br>
+                <p class="text-xl text-gray-300 font-medium">
+                    محامية متخصصة في القانون التجاري والمدني<br>
+                    <span class="text-[#C5A059]"> باحثة ماجستير في القانون</span>
+                </p>
+
+                <p class="text-gray-400 leading-relaxed max-w-lg">
+                    خبرة متميزة في صياغة العقود والاتفاقيات، تأسيس الشركات، التقاضي المدني والتجاري، مع سجل حافل من
+                    النجاحات القانونية بنسبة 100%.
+                </p>
+
+                <!-- الأزرار -->
+                <div class="flex gap-4 pt-4">
+                    <a href="#contact"
+                        class="bg-[#C5A059] text-[#FFFFFF] px-8 py-3 rounded-lg  hover:bg-[#b08e4d] transition flex items-center gap-2">
+                        احجز استشارة قانونية الآن
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:Shimaa18112002@gmail.com"
+                        class="border border-[#C5A059] text-[#C5A059] px-8 py-3 rounded-lg font-cairo hover:bg-[#C5A059]/10 transition flex items-center gap-2">
+                        تواصل عبر البريد
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- معلومات التواصل السفلية -->
+                <div class="flex items-center gap-6 text-gray-400 pt-6 text-sm">
+                    <div class="flex items-center gap-2">
+                        Shimaa18112002@gmail.com <i class="fas fa-envelope text-[#C5A059]"></i>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        +201028285034 <i class="fas fa-phone text-[#C5A059]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإنجازات الأكاديمية  -->
+    <section class="py-20 bg-customLightGray  slide-up">
+        <div class="container mx-auto">
+            <div class="text-center mb-16 space-y-3">
+                <div class="bg-customGold/10 inline-block px-4 py-1 rounded-full text-customGold font-semibold">التميز
+                    الأكاديمي</div>
+                <h1 class="text-5xl font-bold">إنجازات أكاديمية متميزة</h1>
+                <p class="text-gray-600 max-w-xl mx-auto">رحلة أكاديمية حافلة بالتفوق والتميز من البداية وحتى الآن.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+                <!-- البطاقة 1 -->
+                <div
+                    class="bg-white p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(197,160,89,0.15)] group flex flex-col items-center text-center">
+                    <span
+                        class="bg-[#C5A059]/10 text-[#C5A059] text-xs font-bold px-4 py-1.5 rounded-full mb-6">حالياً</span>
+                    <div
+                        class="bg-gray-50 text-[#C5A059] p-4 rounded-2xl mb-6 w-16 h-16 flex items-center justify-center transition-colors group-hover:bg-[#C5A059] group-hover:text-white">
+                        <i class="fas fa-book text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#0A192F] mb-3 leading-tight">باحثة ماجستير</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">تخصص القانون التجاري والمدني</p>
+                </div>
+
+                <!-- البطاقة 2 -->
+                <div
+                    class="bg-white p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(197,160,89,0.15)] group flex flex-col items-center text-center">
+                    <span
+                        class="bg-[#C5A059]/10 text-[#C5A059] text-xs font-bold px-4 py-1.5 rounded-full mb-6">2019-2023</span>
+                    <div
+                        class="bg-gray-50 text-[#C5A059] p-4 rounded-2xl mb-6 w-16 h-16 flex items-center justify-center transition-colors group-hover:bg-[#C5A059] group-hover:text-white">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#0A192F] mb-3 leading-tight">الإنجليزية القانونية</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">تقديرات A طوال الأربع سنوات</p>
+                </div>
+
+                <!-- البطاقة 3 -->
+                <div
+                    class="bg-white p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(197,160,89,0.15)] group flex flex-col items-center text-center">
+                    <span
+                        class="bg-[#C5A059]/10 text-[#C5A059] text-xs font-bold px-4 py-1.5 rounded-full mb-6">2020</span>
+                    <div
+                        class="bg-gray-50 text-[#C5A059] p-4 rounded-2xl mb-6 w-16 h-16 flex items-center justify-center transition-colors group-hover:bg-[#C5A059] group-hover:text-white">
+                        <i class="fas fa-trophy text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#0A192F] mb-3 leading-tight">الرابعة على الدفعة</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">في الفرقة الأولى بكلية الحقوق</p>
+                </div>
+
+                <!-- البطاقة 4 -->
+                <div
+                    class="bg-white p-8 rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(197,160,89,0.15)] group flex flex-col items-center text-center">
+                    <span
+                        class="bg-[#C5A059]/10 text-[#C5A059] text-xs font-bold px-4 py-1.5 rounded-full mb-6">2023</span>
+                    <div
+                        class="bg-gray-50 text-[#C5A059] p-4 rounded-2xl mb-6 w-16 h-16 flex items-center justify-center transition-colors group-hover:bg-[#C5A059] group-hover:text-white">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-[#0A192F] mb-3 leading-tight">ليسانس حقوق</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">جيد جداً مع مرتبة الشرف</p>
+                </div>
+
+            </div>
+
+            <!-- شريط الإحصائيات السفلي -->
+            <div
+                class="bg-[#0A192F] text-white py-12 rounded-[2rem] flex flex-wrap justify-around items-center gap-8 relative overflow-hidden">
+                <div
+                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5">
+                </div>
+
+                <div class="relative z-10 text-center px-4">
+                    <div class="text-5xl font-black text-[#C5A059] mb-2">#4</div>
+                    <p class="text-sm font-medium text-gray-300">على دفعة الفرقة الأولى</p>
+                </div>
+
+                <div
+                    class="relative z-10 w-px h-16 bg-gradient-to-b from-transparent via-[#C5A059] to-transparent hidden md:block">
+                </div>
+
+                <div class="relative z-10 text-center px-4">
+                    <div class="text-5xl font-black text-[#C5A059] mb-2">A</div>
+                    <p class="text-sm font-medium text-gray-300">تقدير ممتاز في الإنجليزية القانونية</p>
+                </div>
+
+                <div
+                    class="relative z-10 w-px h-16 bg-gradient-to-b from-transparent via-[#C5A059] to-transparent hidden md:block">
+                </div>
+
+                <div class="relative z-10 text-center px-4">
+                    <div class="text-5xl font-black text-[#C5A059] mb-2">+4</div>
+                    <p class="text-sm font-medium text-gray-300">سنوات من التميز الأكاديمي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 space-y-3">
+                <div class="bg-[#C5A059]/10 inline-block px-4 py-1 rounded-full text-[#C5A059] font-semibold">الخبرة
+                    العملية</div>
+                <h2 class="text-4xl font-bold text-[#0A192F]">رحلة من التدريب إلى الاحتراف</h2>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <div class="absolute w-1 bg-[#C5A059] h-full left-6 md:left-1/2 md:-translate-x-1/2 top-0"></div>
+
+                <div class="space-y-12">
+
+                    <div class="relative pl-16 md:pl-0">
+                        <div
+                            class="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 w-6 h-6 bg-white border-4 border-[#C5A059] rounded-full top-0 z-10">
+                        </div>
+                        <div class="md:grid md:grid-cols-2 gap-12">
+                            <div class="md:text-right md:pr-12">
+                                <div
+                                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-start md:items-end">
+                                    <div
+                                        class="bg-[#C5A059]/10 text-[#C5A059] w-12 h-12 flex items-center justify-center rounded-xl mb-4">
+                                        <i class="fas fa-briefcase text-xl"></i></div>
+                                    <span
+                                        class="bg-[#C5A059]/10 text-[#C5A059] px-3 py-1 rounded-full text-xs font-bold">2024
+                                        - حالياً</span>
+                                    <h3 class="text-xl font-bold text-[#0A192F] mt-3">محامية ممارسة</h3>
+                                    <p class="text-gray-600 text-sm mt-2">تقديم الاستشارات القانونية، صياغة العقود
+                                        والاتفاقيات، تمثيل العملاء أمام المحاكم.</p>
+                                    <ul class="text-gray-500 text-sm list-disc list-inside mt-3 space-y-1 text-right">
+                                        <li>+12 قضية ناجحة بنسبة نجاح 100%</li>
+                                        <li>تخصص في القانون التجاري والمدني</li>
+                                        <li>صياغة عقود تأسيس الشركات</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0">
+                        <div
+                            class="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 w-6 h-6 bg-white border-4 border-[#C5A059] rounded-full top-0 z-10">
+                        </div>
+                        <div class="md:grid md:grid-cols-2 gap-12">
+                            <div></div>
+                            <div class="md:pl-12">
+                                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                                    <div
+                                        class="bg-[#C5A059]/10 text-[#C5A059] w-12 h-12 flex items-center justify-center rounded-xl mb-4">
+                                        <i class="fas fa-graduation-cap text-xl"></i></div>
+                                    <span
+                                        class="bg-[#C5A059]/10 text-[#C5A059] px-3 py-1 rounded-full text-xs font-bold">2023
+                                        - 2024</span>
+                                    <h3 class="text-xl font-bold text-[#0A192F] mt-3">باحثة ماجستير في القانون</h3>
+                                    <p class="text-gray-600 text-sm mt-2">دراسات عليا متقدمة في تخصص القانون التجاري
+                                        والمدني مع التركيز على البحث الأكاديمي.</p>
+                                    <ul class="text-gray-500 text-sm list-disc list-inside mt-3 space-y-1 text-right">
+                                        <li>أبحاث متخصصة في القانون التجاري</li>
+                                        <li>دراسة معمقة للتشريعات المقارنة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0">
+                        <div
+                            class="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 w-6 h-6 bg-white border-4 border-[#C5A059] rounded-full top-0 z-10">
+                        </div>
+                        <div class="md:grid md:grid-cols-2 gap-12">
+                            <div class="md:text-right md:pr-12">
+                                <div
+                                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-start md:items-end">
+                                    <div
+                                        class="bg-[#C5A059]/10 text-[#C5A059] w-12 h-12 flex items-center justify-center rounded-xl mb-4">
+                                        <i class="fas fa-gavel text-xl"></i></div>
+                                    <span
+                                        class="bg-[#C5A059]/10 text-[#C5A059] px-3 py-1 rounded-full text-xs font-bold">2021
+                                        - 2023</span>
+                                    <h3 class="text-xl font-bold text-[#0A192F] mt-3">التدريب العملي - الفرقتين الثالثة
+                                        والرابعة</h3>
+                                    <p class="text-gray-600 text-sm mt-2">تدريب مكثف في مكاتب المحاماة والمحاكم
+                                        المختلفة.</p>
+                                    <ul class="text-gray-500 text-sm list-disc list-inside mt-3 space-y-1 text-right">
+                                        <li>حضور جلسات المحاكم المدنية والتجارية</li>
+                                        <li>المشاركة في صياغة القضايا والمذكرات</li>
+                                        <li>اكتساب خبرة عملية في التقاضي</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-16 md:pl-0">
+                        <div
+                            class="absolute left-[14px] md:left-1/2 md:-translate-x-1/2 w-6 h-6 bg-white border-4 border-[#C5A059] rounded-full top-0 z-10">
+                        </div>
+                        <div class="md:grid md:grid-cols-2 gap-12">
+                            <div></div>
+                            <div class="md:pl-12">
+                                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                                    <div
+                                        class="bg-[#C5A059]/10 text-[#C5A059] w-12 h-12 flex items-center justify-center rounded-xl mb-4">
+                                        <i class="fas fa-book-open text-xl"></i></div>
+                                    <span
+                                        class="bg-[#C5A059]/10 text-[#C5A059] px-3 py-1 rounded-full text-xs font-bold">2020
+                                        - 2021</span>
+                                    <h3 class="text-xl font-bold text-[#0A192F] mt-3">بداية التدريب العملي - الفرقة
+                                        الثانية</h3>
+                                    <p class="text-gray-600 text-sm mt-2">أول خطوة في عالم الممارسة القانونية.</p>
+                                    <ul class="text-gray-500 text-sm list-disc list-inside mt-3 space-y-1 text-right">
+                                        <li>صياغة القضايا والعقود البسيطة</li>
+                                        <li>التعرف على إجراءات التقاضي</li>
+                                        <li>بناء الأساس القانوني العملي</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-20 bg-customLightGray slide-up">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 space-y-3">
+                <div class="bg-customGold/10 inline-block px-4 py-1 rounded-full text-customGold font-semibold">الخدمات
+                    القانونية</div>
+                <h2 class="text-4xl font-bold text-customBlue">مجالات التخصص والخبرة</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم مجموعة شاملة من الخدمات القانونية المتخصصة بأعلى معايير
+                    الاحترافية والجودة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-balance-scale text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">التقاضي المدني والتجاري</h3>
+                    <p class="text-gray-600 text-sm">تمثيل قانوني احترافي أمام المحاكم في القضايا المدنية والتجارية مع
+                        سجل حافل من القضايا الناجحة بنسبة 100%.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>القضايا المدنية</li>
+                        <li>المنازعات التجارية</li>
+                        <li>قضايا العقود</li>
+                        <li>التحكيم والوساطة</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-building text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">قانون الشركات وتأسيسها</h3>
+                    <p class="text-gray-600 text-sm">تقديم الاستشارات القانونية الشاملة لتأسيس الشركات واختيار الشكل
+                        القانوني المناسب وإتمام كافة الإجراءات القانونية.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>تأسيس الشركات بأنواعها</li>
+                        <li>صياغة عقود التأسيس</li>
+                        <li>استشارات الحوكمة</li>
+                        <li>التراخيص والتصاريح</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-file-contract text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">صياغة العقود والاتفاقيات</h3>
+                    <p class="text-gray-600 text-sm">صياغة احترافية لجميع أنواع العقود التجارية والمدنية وعقود العمل
+                        وعقود البيع والشراء والاتفاقيات القانونية المتخصصة.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>عقود تجارية ومدنية</li>
+                        <li>عقود العمل والتوظيف</li>
+                        <li>اتفاقيات الشراكة</li>
+                        <li>مراجعة وتدقيق العقود</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-gavel text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">المرافعات والدفاع</h3>
+                    <p class="text-gray-600 text-sm">مهارات مرافعة قوية واحترافية مكتسبة من خلال سنوات من التدريب
+                        والممارسة أمام المحاكم.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>المرافعات الشفهية</li>
+                        <li>إعداد المذكرات</li>
+                        <li>الدفوع القانونية</li>
+                        <li>الطعون والاستئناف</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-briefcase text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">القانون التجاري</h3>
+                    <p class="text-gray-600 text-sm">تخصص دقيق في القانون التجاري يشمل الأوراق التجارية والملكية الفكرية
+                        والمعاملات التجارية المعقدة.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>الأوراق التجارية</li>
+                        <li>الملكية الفكرية</li>
+                        <li>العقود التجارية</li>
+                        <li>الإفلاس والتصفية</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-customGold space-y-4 hover:shadow-md transition-shadow">
+                    <div class="text-customGold"><i class="fas fa-comments text-3xl"></i></div>
+                    <h3 class="text-2xl font-bold text-customBlue">الاستشارات القانونية</h3>
+                    <p class="text-gray-600 text-sm">تقديم استشارات قانونية شاملة ومتخصصة في مختلف المجالات القانونية
+                        للأفراد والشركات.</p>
+                    <ul class="text-gray-500 text-sm list-disc list-inside space-y-1">
+                        <li>استشارات تجارية</li>
+                        <li>استشارات مدنية</li>
+                        <li>الرأي القانوني</li>
+                        <li>التخطيط القانوني</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id='achieve' class="bg-customBlue  text-customWhite py-20 slide-up">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 space-y-3">
+                <div class="bg-customGold/10 inline-block px-4 py-1 rounded-full text-customGold font-semibold">
+                    الإنجازات بالأرقام</div>
+                <h2 class="text-4xl font-bold">أرقام تتحدث عن النجاح</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">إنجازات قانونية موثقة تعكس التزامنا بالتميز والاحترافية.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+                <div
+                    class="bg-customBlueLight border border-customGold/20 p-8 rounded-2xl text-center space-y-4 hover:border-customGold transition-all">
+                    <div class="text-customGold text-4xl mb-2"><i class="fas fa-building"></i></div>
+                    <div class="flex justify-center items-center">
+                        <span class="text-5xl font-bold text-customGold count" data-target="15">15</span>
+                        <span class="text-3xl font-bold text-customGold">+</span>
+                    </div>
+                    <p class="text-lg">عقد وتأسيس شركة</p>
+                </div>
+
+                <div
+                    class="bg-customBlueLight border border-customGold/20 p-8 rounded-2xl text-center space-y-4 hover:border-customGold transition-all">
+                    <div class="text-customGold text-4xl mb-2"><i class="fas fa-chart-line"></i></div>
+                    <div class="flex justify-center items-center">
+                        <span class="text-5xl font-bold text-customGold count" data-target="4">4</span>
+                        <span class="text-3xl font-bold text-customGold">+</span>
+                    </div>
+                    <p class="text-lg">سنوات من التميز</p>
+                </div>
+
+                <div
+                    class="bg-customBlueLight border border-customGold/20 p-8 rounded-2xl text-center space-y-4 hover:border-customGold transition-all">
+                    <div class="text-customGold text-4xl mb-2"><i class="fas fa-file-alt"></i></div>
+                    <div class="flex justify-center items-center">
+                        <span class="text-5xl font-bold text-customGold count" data-target="12">12</span>
+                        <span class="text-3xl font-bold text-customGold">+</span>
+                    </div>
+                    <p class="text-lg">قضية ناجحة</p>
+                </div>
+
+                <div
+                    class="bg-customBlueLight border border-customGold/20 p-8 rounded-2xl text-center space-y-4 hover:border-customGold transition-all">
+                    <div class="text-customGold text-4xl mb-2"><i class="fas fa-award"></i></div>
+                    <div class="flex justify-center items-center">
+                        <span class="text-5xl font-bold text-customGold count" data-target="100">100</span>
+                        <span class="text-3xl font-bold text-customGold">%</span>
+                    </div>
+                    <p class="text-lg">نسبة النجاح في القضايا</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-8 border-t border-white/10">
+                <p class="text-xl text-gray-300 mb-6">هل تحتاج إلى استشارة قانونية احترافية؟</p>
+                <a href="#contact"
+                    class="bg-customGold text-customBlue px-8 py-3 rounded-lg font-bold hover:bg-white transition-colors duration-300 inline-block">تواصل
+                    معنا الآن</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr>
+
+    <!-- قسم اتصلي بنا (بناءً على image_12.png) -->
+    <section id="contact" class="bg-customBlue text-customWhite py-20  fade-in">
+        <div class="container mx-auto grid grid-cols-2 gap-16">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-customGold">الأستاذة شيماء محمد أحمد</h2>
+                <p class="text-xl text-gray-300 max-w-lg">محامية وباحثة ماجستير متخصصة في القانون التجاري والمدني، بخبرة
+                    متميزة في صياغة العقود، تأسيس الشركات، والتقاضي مع سجل حافل من النجاحات بنسبة 100%.</p>
+                <div class="border-t border-gray-700 pt-6 space-y-3">
+                    <h4 class="text-xl font-bold text-customGold">معلومات التواصل</h4>
+                    <p class="flex items-center gap-2"><svg class="w-5 h-5 text-customGold" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg> الهاتف:+201028285034</p>
+                    <p class="flex items-center gap-2"><svg class="w-5 h-5 text-customGold" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg> البريد الإلكتروني: Shimaa18112002@gmail.com</p>
+                    <p class="flex items-center gap-2"><svg class="w-5 h-5 text-customGold" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg> المكتب: القاهرة، مصر</p>
+                </div>
+                <div class="pt-6 space-y-3 gap-8">
+                    <h4 class="text-xl font-bold text-customGold">تابعنا على مواقع التواصل</h4>
+                    <div class="flex gap-4 text-2xl text-gray-400">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-[#C5A059] hover:text-[#C5A059] transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-[#C5A059] hover:text-[#C5A059] transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/17tx4LHA1Z/?mibextid=wwXIfr"
+                            class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-[#C5A059] hover:text-[#C5A059] transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center border border-gray-600 rounded-full hover:border-[#C5A059] hover:text-[#C5A059] transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="bg-customGold/10 p-6 rounded-2xl border border-customGold/20 mt-6 max-w-sm">
+                    <h4 class="text-lg font-bold text-customGold mb-3">ساعات العمل</h4>
+                    <p class="text-gray-300 flex justify-between">السبت - الخميس <span class="font-bold">9:00 ص - 6:00
+                            م</span></p>
+                    <p class="text-gray-300 flex justify-between">الجمعة <span class="font-bold">مغلق</span></p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-4xl font-bold text-customGold">احجز استشارتك القانونية</h2>
+                <p class="text-lg text-gray-300">املأ النموذج التالي وسنتواصل معك في أقرب وقت ممكن.</p>
+                <form class="space-y-4 pt-6 id=" contactForm" onsubmit="handleFormSubmit(event)"">
+                    <div class=" grid grid-cols-2 gap-4">
+                    <div class="space-y-1">
+                        <label class="text-xs text-gray-400">الاسم الكامل *</label>
+                        <input type="text" placeholder="أدخل اسمك الكامل"
+                            class="w-full bg-slate-800 border border-slate-700 p-3 rounded-xl text-customWhite placeholder-gray-500 focus:border-customGold focus:ring-1 focus:ring-customGold"
+                            required>
+                    </div>
+                    <div class="space-y-1">
+                        <label class="text-xs text-gray-400">البريد الإلكتروني *</label>
+                        <input type="email" placeholder="example@email.com"
+                            class="w-full bg-slate-800 border border-slate-700 p-3 rounded-xl text-customWhite placeholder-gray-500 focus:border-customGold focus:ring-1 focus:ring-customGold"
+                            required>
+                    </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-1 relative">
+                    <label class="text-xs text-gray-400">موضوع الاستشارة *</label>
+                    <select
+                        class="w-full bg-slate-800 border border-slate-700 p-3 rounded-xl text-gray-500 focus:border-customGold focus:ring-1 focus:ring-customGold appearance-none"
+                        required>
+                        <option value="" disabled selected>اختر الموضوع</option>
+                        <option value="تأسيس شركات">تأسيس شركات</option>
+                        <option value="صياغة عقود">صياغة عقود</option>
+                        <option value="تقاضي مدني">تقاضي مدني</option>
+                        <option value="تقاضي تجاري">تقاضي تجاري</option>
+                    </select>
+                    <svg class="w-4 h-4 text-gray-500 absolute left-4 top-[40px] pointer-events-none" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="space-y-1 relative">
+                    <label class="text-xs text-gray-400">رقم الهاتف *</label>
+                    <input type="tel" placeholder="+20 123 456 7890"
+                        class="w-full bg-slate-800 border border-slate-700 p-3 rounded-xl text-customWhite placeholder-gray-500 focus:border-customGold focus:ring-1 focus:ring-customGold"
+                        required>
+                    <span class="absolute left-4 top-[40px] text-gray-500"><i class="fas fa-flag-egypt mr-1"></i></span>
+                    <!-- استبدلي بأيقونة علم مصر إن أمكن -->
+                </div>
+            </div>
+            <div class="space-y-1">
+                <label class="text-xs text-gray-400">تفاصيل الاستشارة *</label>
+                <textarea placeholder="اكتب تفاصيل استشارتك القانونية هنا..." rows="6"
+                    class="w-full bg-slate-800 border border-slate-700 p-3 rounded-xl text-customWhite placeholder-gray-500 focus:border-customGold focus:ring-1 focus:ring-customGold"
+                    required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn"
+                class="w-full bg-customGold text-customBlue p-4 rounded-xl font-bold hover:bg-opacity-90 flex items-center justify-center gap-2">إرسال
+                طلب الاستشارة <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                </svg></button>
+            </form>
+            <div id="successMessage"
+                class="hidden mt-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl text-center font-semibold">
+                <i class="fas fa-check-circle ml-2"></i> تم استلام طلبك بنجاح! سنتواصل معك قريباً.
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-customBlue border-t border-gray-800 py-6 text-gray-500 text-sm">
+        <div class="container mx-auto flex items-center justify-between">
+            <p>&copy; 2024 الأستاذة شيماء محمد أحمد. جميع الحقوق محفوظة.</p>
+            <div class="space-x-reverse space-x-6">
+                <a href="#" class="hover:text-customWhite">سياسة الخصوصية</a>
+                <a href="#" class="hover:text-customWhite">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top"
+        class="fixed bottom-6 right-6 bg-customGold text-customBlue w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-opacity duration-300 opacity-0 hover:bg-opacity-90 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </a>
+   <script src="portfolio.js"></script>
+</body>
+
+</html>
